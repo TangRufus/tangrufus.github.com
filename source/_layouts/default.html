@@ -12,10 +12,23 @@
 		{% include header.html %}
 		<!--************************** HEADER -->
 		
-		
-    	<div id="content">
-      	  {{ content | expand_urls: root_url }}
-    	</div>
+        <!--************************** MIDDLE -->
+        <section class="middle row">
+            <!--************************** CONTENT -->
+            <div class="span8 content">
+				
+			{{ content | expand_urls: root_url }}
+			
+            	
+        	</div>
+        	<!--************************** CONTENT -->
+			
+		<!--************************** SIDEBAR -->
+			
+			
+        </section>
+        <!--************************** MIDDLE -->
+
   
 	</div>
   	<!--************************** CONTAINER -->

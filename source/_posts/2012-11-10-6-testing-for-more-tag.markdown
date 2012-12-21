@@ -4,7 +4,7 @@ title: "6 testing for more tag"
 date: 2012-11-10 14:23
 comments: true
 external-url: 
-categories: blog
+categories: blog-htyp testing blog
 keywords: more tag markdown
 description: testing for more tag
 ---

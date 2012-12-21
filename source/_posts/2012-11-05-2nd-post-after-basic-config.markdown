@@ -3,7 +3,7 @@ layout: post
 title: "2nd post after basic config"
 date: 2012-11-05 21:21
 comments: true
-categories: blog
+categories: blog test testing blog
 description: 2nd post for testing
 ---
 

@@ -3,9 +3,8 @@ layout: post
 title: "mou: help.markdown"
 date: 2012-11-12 21:19
 comments: true
-external-url: 
-categories: Testing
-tags:  blog, testing
+cover: Mou_128.png
+categories: Testing Blog diu-u hyper-asd
 keywords: mou, markdown
 description: testing for formatting
 ---
