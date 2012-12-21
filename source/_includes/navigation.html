@@ -1,15 +1,30 @@
-<ul class="subscription" data-subscription="rss{% if site.subscribe_email %} email{% endif %}">
-  <li><a href="{{ site.subscribe_rss }}" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
-  {% if site.subscribe_email %}
-    <li><a href="{{ site.subscribe_email }}" rel="subscribe-email" title="subscribe via email">Email</a></li>
-  {% endif %}
-</ul>
-  {% if site.simple_search %}
-<form action="{{ site.simple_search }}" method="get">
-  <fieldset role="search">
-    <input type="hidden" name="q" value="site:{{ site.url | shorthand_url }}" />
-    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
-  </fieldset>
-</form>
-  {% endif %}
-{% include custom/navigation.html %}
+<nav role="navigation" class="span8">
+	<!-- PRIMARY NAV -->
+	<ul id="nav">
+		<li><a href="{{ root_url }}/">Home</a></li>
+		<li><a href="{{ root_url }}/">Maps</a></li>
+		<li><a href="{{ root_url }}/">Gears</a></li>
+		<li><a href="{{ root_url }}/">About</a></li>
+		<li><a href="{{ root_url }}/">Support</a></li>
+	</ul>
+	<!-- PRIMARY NAV -->
+
+	<!-- SOCIAL LINKS -->
+	<ul class="social">
+		<!--<li><a class="facebook" href="#">Facebook</a></li>-->
+	    <!--<li><a class="twitter" href="#">Twitter</a></li>-->
+	    <!--<li><a class="flickr" href="#">Flickr</a></li>-->
+	    <!--<li><a class="dribble" href="#">Dribble</a></li>-->
+	    <!--<li><a class="lastfm" href="#">Last Fm</a></li>-->
+	    <!--<li><a class="linkedin" href="#">Linked In</a></li>-->
+	    <!--<li><a class="pinterest" href="#">Pinterest</a></li>-->
+	    <!--<li><a class="forrst" href="#">Forst</a></li>-->
+	    <!--<li><a class="skype" href="#">Skype</a></li>-->
+	    <!--<li><a class="picassa" href="#">Picassa</a></li>-->
+	    <!--<li><a class="youtube" href="#">Youtube</a></li>-->
+	    <!--<li><a class="google" href="#">Google Plus</a></li>-->
+	    <li><a class="vimeo" href="#">Vimeo</a></li>
+	    <li><a class="rss" href="#">RSS</a></li>
+	</ul>
+	<!-- SOCIAL LINKS -->
+</nav>

@@ -68,15 +68,12 @@ Rake::Minify.new(:minify_and_combine) do
 
   puts "BEGIN Minifying #{output_file}"
   group(output_file) do
-    add("#{source_dir}/javascripts/group/jquery.min.js")
     files.each do |filename|
-      if !filename.include? 'jquery.min.js'
         puts "Minifying- #{filename} into #{output_file}"
         if filename.include? '.min.js'
           add(filename, :minify => false)
         else
           add(filename)
-        end
       end
     end
   end
