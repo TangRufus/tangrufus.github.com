@@ -1,5 +1,9 @@
+<!DOCTYPE html>
+<html>
 {% capture root_url %}{{ site.root | strip_slash }}{% endcapture %}
+<!--************************** HEAD -->
 {% include head.html %}
+<!--************************** HEAD -->
 <body>
 
 	<!--************************** CONTAINER -->
@@ -9,13 +13,17 @@
 		<!--************************** HEADER -->
 		
 		
- 
-  <div id="main">
-    <div id="content">
-      {{ content | expand_urls: root_url }}
-    </div>
-  </div>
-  <footer role="contentinfo">{% include footer.html %}</footer>
-  {% include after_footer.html %}
+    	<div id="content">
+      	  {{ content | expand_urls: root_url }}
+    	</div>
+  
+	</div>
+  	<!--************************** CONTAINER -->
+ 	<!--************************** FOOTER -->
+  	{% include footer.html %}
+  	<!--************************** FOOTER -->
+	<!--************************** AFTER FOOTER -->
+	{% include after_footer.html %}
+	<!--************************** AFTER FOOTER -->
 </body>
 </html>
