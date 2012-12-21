@@ -2,12 +2,13 @@
 #      Main Configs       #
 # ----------------------- #
 
-url: http://TangRufus.github.com
-title: My Octopress Blog
-subtitle: A blogging framework for hackers.
-author: Your Name
+url: http://onsaddles.com
+title: onSaddles
+subtitle: 踩單車去西藏
+author: "港仔 Rufus"
 simple_search: http://google.com/search
-description:
+description: 踩單車去西藏，二千四百公里，冇爆胎，冇搭車
+keywords: 西藏, 拉薩, 成都, 騎行, 單車, 自行車, 川藏, 318, 攻略, 港仔
 
 # Default date format is "ordinal" (resulting in "July 22nd 2007")
 # You can customize the format as defined in
@@ -28,19 +29,19 @@ email:
 
 # If publishing to a subdirectory as in http://site.com/project set 'root: /project'
 root: /
-permalink: /:year/:month/:day/:title/
+permalink: /:title/
 source: source
 destination: public
 plugins: plugins
 code_dir: downloads/code
-category_dir: blog/categories
+category_dir: /categories
 markdown: rdiscount
 pygments: false # Jekyll's default Python Pygments have been replaced by pygments.rb. Set to true to use Albino + Pythong Pygments
 
-paginate: 10          # Posts per page on the blog index
-pagination_dir: blog  # Directory base for pagination URLs eg. /blog/page/2/
+paginate: 5          # Posts per page on the blog index
+pagination_dir:  # Directory base for pagination URLs eg. /blog/page/2/
 recent_posts: 5       # Posts in the sidebar Recent Posts section
-excerpt_link: "Read on &rarr;"  # "Continue reading" link text at the bottom of excerpted articles
+excerpt_link: "全文 &rarr;"  # "Continue reading" link text at the bottom of excerpted articles
 excerpt_in_feed: false # Truncate excerpted articles in the atom feed
 permalink_label: "Permalink"
 permalink_label_feed: "&#9875; Permalink"
