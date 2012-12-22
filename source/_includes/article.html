@@ -1,0 +1,31 @@
+{% if post.author %}
+  {% assign author = post.author %}
+{% elsif page.author %}
+  {% assign author = page.author %}
+{% else %}
+  {% assign author = site.author %}
+{% endif %}
+
+<!-- PAGE HEADER -->
+<div class="page-header">
+    <h1><b>{{ page.title }} </b><small>by {{ author }}</small></h1>
+</div>
+<!-- PAGE HEADER -->
+<!-- POST -->
+<div class="post post-single">           	
+    <!-- POST MEDIA -->
+    <div class="media-box">
+        <img src="{{ root_url }}/img/cover/{{ page.cover }}" alt="blog-post">
+    </div> 
+    <!-- POST MEDIA -->
+	{% include post/jiathis.html %}   
+   	<!-- POST CONTENT -->
+    <div class="post-content">
+    	{{ content }}
+	</div>
+    <!-- POST CONTENT -->  
+    <!-- TAGS -->
+    {% include post/tags.html %}
+    <!-- TAGS -->
+	{% include post/jiathis.html %}
+</div>

@@ -1,12 +1,25 @@
-{% capture category %}{{ post.categories | size }}{% endcapture %}
-{% include post/title.html %}
-<time datetime="{{ post.date | datetime | date_to_xmlschema }}" pubdate>{{ post.date | date: "<span class='month'>%b</span> <span class='day'>%d</span> <span class='year'>%Y</span>"}}</time>
-<footer>
-  {% if linklog %}
-  <a rel="bookmark" href="{{ permalink }}">{{ site.permalink_label }}</a>
-  {% endif %}
-  {% if category != '0' %}
-  {% if linklog %} &bull; {% endif %}
-  <span class="categories">posted in {{ post.categories | category_links }}</span>
-  {% endif %}
-</footer>
+<!-- POST -->
+<article class="post row">       	
+	<div class="media-box span3">
+    	<img src="{{ root_url }}/img/cover/{{ post.cover }}" alt="blog-post">
+        <div class="mask">
+        	<a rel="bookmark" href="{{ permalink }}" class="ico link"></a>
+            <h3 class="title">see full post</h3>
+        </div>
+	</div>                    
+    <div class="span5">
+    	<h2 class="post-title"><a rel="bookmark" href="{{ permalink }}">{{ article_title }}</a></h2>                   
+	    <!-- POST INFO -->
+		{% include post/info.html %}
+	    <!-- POST INFO -->
+	    <p>{{ post.description }}</p>   
+	    <!-- TAGS -->
+	    {% include post/tags.html %}
+	    <!-- TAGS -->
+		
+	</div>
+</article>
+<!-- POST -->
+
+
+

@@ -1,0 +1,29 @@
+<!-- JiaThis JS BEGIN -->
+<script type="text/javascript" >
+var jiathis_config={
+	'data_track_clickback':true,
+	'url':"{{ site.url }}{{ page.url }}",
+	'summary':": {{ page.description }} #onSaddles#",
+	'title':"{{ page.title }}",
+	'pic':"{{ site.url }}/img/cover/{{ page.cover }}",
+	'ralateuid':{
+		"tsina":"{{ site.sina_weibo_id }}"
+	},
+	'hideMore':false
+}
+</script>
+<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid={{ site.jiathis_id }}" charset="utf-8"></script>
+<!-- JiaThis JS END -->
+<!-- UJian JS BEGIN -->
+<script type="text/javascript" src="http://v1.ujian.cc/code/ujian.js?uid={{ site.jiathis_id }}"></script>
+<!-- UJian JS END -->
+<!-- UY BEGIN -->
+<script type="text/javascript">
+var uyan_config = {
+     'title':"{{ page.title }}", 
+     'pic':"{{ site.url }}/img/cover/{{ page.cover }}", 
+     'su':"{{ page.title }}" 
+};
+</script>
+<script type="text/javascript" id="UYScript" src="http://v1.uyan.cc/js/iframe.js?UYUserId={{ site.jiathis_id }}" async=""></script>
+<!-- UY END -->

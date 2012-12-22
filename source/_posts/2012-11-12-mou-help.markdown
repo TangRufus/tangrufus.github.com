@@ -4,8 +4,8 @@ title: "mou: help.markdown"
 date: 2012-11-12 21:19
 comments: true
 cover: Mou_128.png
-categories: Testing Blog diu-u hyper-asd
-keywords: mou, markdown
+categories: [testing, diu-u, hyper-asd, blog]
+keywords: [mou, markdown]
 description: testing for formatting
 featured: true
 ---

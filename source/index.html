@@ -16,19 +16,4 @@ layout: default
 	{% endfor %}
 </div>
 <!-- POST-LIST -->
-
-<!-- PAGINATION -->
-<div class="pagination-wrap">
-	<ul class="pagination left">
-  		{% if paginator.next_page %}
-      		<li><a rel="prev" class="prev" href="{{paginator.next_page}}">&larr; Older</a></li>
-      	{% endif %}
-  	</ul>
-	
-	<ul class="pagination right">
-      	{% if paginator.previous_page %}
-      		<li><a rel="next" class="next" href="{{paginator.previous_page}}">Newer &rarr;</a></li>
-      	{% endif %}
-  	</ul>
-</div>
-<!-- PAGINATION -->
+{% include pagination.html %}

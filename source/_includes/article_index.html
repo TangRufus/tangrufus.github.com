@@ -1,13 +1,5 @@
-{% if post.author %}
-  {% assign author = post.author %}
-{% elsif page.author %}
-  {% assign author = page.author %}
-{% else %}
-  {% assign author = site.author %}
-{% endif %}
 <!-- POST -->
-<article class="post row">
-                	
+<article class="post row">      	
 	<div class="media-box span3">
     	<img src="{{ root_url }}img/cover/{{ post.cover }}" alt="blog-post">
         <div class="mask">
@@ -15,23 +7,16 @@
             <h3 class="title">see full post</h3>
         </div>
 	</div>
-                        
     <div class="span5">
-    	<h2 class="post-title"><a rel="bookmark" href="{{ permalink }}">{{ article_title }}</a><span class="category"><a rel="tag" href="{{ root_url }}{{ site.category_dir }}/{{ post.categories | first | downcase }}">{{ post.categories | first }}</a></span></h2>
-                            
-        <div class="info">
-        <i>by</i> <a href="#" class="author" rel="me author">{{ author }}</a> <i>on</i> <span class="date">{{ post.date | date: "%B %d, %Y" }}</span> <i>with</i> <a href="#" class="comments">?</a> <i>comments</i>
-    	</div>
-                            
+    	<h2 class="post-title"><a rel="bookmark" href="{{ permalink }}">{{ article_title }}</a><span class="category"><a rel="tag" href="{{ root_url }}{{ site.category_dir }}/{{ post.categories | first | downcase }}">{{ post.categories | first }}</a></span></h2>  
+	    <!-- POST INFO -->
+		{% include post/info.html %}
+	    <!-- POST INFO -->
 	    <p>{{ content }}</p>
 	    <p><a rel="bookmark" href="{{ permalink }}" class="btn btn-info">{{ site.excerpt_link }}</a></p>
-    
-		<div class="tags">
-	    	<i>Tags:</i> 
-			{% for category in post.categories %}
-				 <a rel="tag" href="{{ root_url }}{{ site.category_dir }}/{{ category | downcase }}"> {{ category }} </a>
-			{% endfor %}
-		</div>
+	    <!-- TAGS -->
+	    {% include post/tags.html %}
+	    <!-- TAGS -->
 	</div>
 </article>
 <!-- POST -->

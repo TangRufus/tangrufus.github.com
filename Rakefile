@@ -149,11 +149,10 @@ task :new_post, :title do |t, args|
     post.puts "comments: true"
     post.puts "title: \"#{title.gsub(/&/,'&amp;')}\""
     post.puts "cover: "
-    post.puts "category: "
-    post.puts "tags: "
-    post.puts "keywords: "
+    post.puts "categories: [,]"
+    post.puts "keywords: [,]"
     post.puts "description: "
-    post.puts "featured: "
+    post.puts "featured: true"
     post.puts "---"
   end
 end

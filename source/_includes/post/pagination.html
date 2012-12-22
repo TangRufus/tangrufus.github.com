@@ -1,0 +1,15 @@
+<!-- PAGINATION -->
+<div class="pagination-wrap">
+	<ul class="pagination left">
+  		{% if page.previous.url %}
+      		<li><a rel="prev" class="prev" href="{{page.previous.url}}">&larr; {{ page.previous.title }}</a></li>
+      	{% endif %}
+  	</ul>
+	
+	<ul class="pagination right">
+      	{% if page.next.url %}
+      		<li><a rel="next" class="next" href="{{page.next.url}}">{{ page.next.title }} &rarr;</a></li>
+      	{% endif %}
+  	</ul>
+</div>
+<!-- PAGINATION -->
