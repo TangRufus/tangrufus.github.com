@@ -6,7 +6,7 @@ comments: true
 cover: Mou_128.png
 categories: [testing, diu-u, hyper-asd, blog]
 keywords: [mou, markdown]
-description: testing for formatting
+description: "testing for formatting"
 featured: true
 ---
 
