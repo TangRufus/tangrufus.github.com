@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /img
+
+SITEMAP: http://onsaddles.com/sitemap.xml
