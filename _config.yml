@@ -104,7 +104,7 @@ disqus_show_comment_count: false
 disqus_developer: 0
 
 # Google Analytics
-google_analytics_tracking_id:
+google_analytics_tracking_id: UA-37268015-1
 
 # Gaug.es Analytics
 gauges_analytics_tracking_id:
