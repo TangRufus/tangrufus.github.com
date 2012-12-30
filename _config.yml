@@ -114,6 +114,7 @@ facebook_like: false
 
 # Sina Weibo
 sina_weibo_id: 3193703023
+sina_eribo_profile_url: http://weibo.com/tangrufus
 
 # JiaThis
 jiathis_id: 1723591
