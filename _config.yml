@@ -21,7 +21,7 @@ subscribe_rss: "http://onsaddles.com/atom.xml"
 subscribe_email: "http://eepurl.com/tuYhj"
 category_feeds: false
 # RSS feeds can list your email address if you like
-email:
+email: "tangrufus@onsaddles.com"
 
 # ----------------------- #
 #    Jekyll & Plugins     #
