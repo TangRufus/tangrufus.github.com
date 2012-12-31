@@ -7,7 +7,8 @@ cover: Mou_128.png
 categories: [testing, diu-u, hyper-asd, blog]
 keywords: [mou, markdown]
 description: "testing for formatting"
-featured: true
+featured: false
+published: false
 ---
 
 # Mou
