@@ -1,4 +1,7 @@
+---
+layout: nil
+---
 User-agent: *
-Disallow: /img
+Disallow: 
 
-SITEMAP: http://onsaddles.com/sitemap.xml
+Sitemap: {{ site.url }}/sitemap.xml 
