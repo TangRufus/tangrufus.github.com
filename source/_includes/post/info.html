@@ -5,6 +5,14 @@
 {% else %}
   {% assign author = site.author %}
 {% endif %}
+
+{% if author == site.author %}
+	{% assign herf = site.sina_eribo_profile_url %}
+{% else %}
+  	{% assign herf = "#" %}
+{% endif %}
+
+
 <div class="info">
-	<i>by</i> <a href="#" class="author" rel="me author">{{ author }}</a> <i>on</i> <span class="date">{{ post.date | date: "%B %d, %Y" }}</span>
+	<i>by</i> <a href="{{ herf }}" class="author" rel="author">{{ author }}</a> <i>on</i> <span class="date">{{ post.date | date: "%B %d, %Y" }}</span>
 </div>

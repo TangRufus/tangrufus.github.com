@@ -1,19 +1,19 @@
 <!-- POST -->
 <article class="post row">      	
 	<div class="media-box span3">
-    	<img src="/img/cover/{{ post.cover }}" alt="blog-post">
+    	<img src="{{ site.url }}/img/cover/{{ post.cover }}" alt="blog-post">
         <div class="mask">
-        	<a rel="bookmark" href="{{ permalink }}" class="ico link"></a>
+        	<a rel="bookmark" href="{{ site.url }}{{ permalink }}" class="ico link"></a>
             <h3 class="title">see full post</h3>
         </div>
 	</div>
     <div class="span5">
-    	<h2 class="post-title"><a rel="bookmark" href="{{ permalink }}">{{ article_title }}</a><span class="category"><a rel="tag" href="/{{ site.category_dir }}/{{ post.categories | first | downcase }}">{{ post.categories | first }}</a></span></h2>  
+    	<h2 class="post-title"><a rel="bookmark" href="{{ site.url }}{{ permalink }}">{{ article_title }}</a><span class="category"><a rel="tag" href="{{ site.url }}{{ site.category_dir }}/{{ post.categories | first | downcase }}">{{ post.categories | first }}</a></span></h2>  
 	    <!-- POST INFO -->
 		{% include post/info.html %}
 	    <!-- POST INFO -->
 	    {{ content }}
-	    <p><a rel="bookmark" href="{{ permalink }}" class="btn btn-info">{{ site.excerpt_link }}</a></p>
+	    <p><a rel="bookmark" href="{{ site.url }}{{ permalink }}" class="btn btn-info">{{ site.excerpt_link }}</a></p>
 	    <!-- TAGS -->
 	    {% include post/tags.html %}
 	    <!-- TAGS -->

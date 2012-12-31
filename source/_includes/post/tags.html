@@ -1,10 +1,10 @@
 <div class="tags">
 	<i>Tags:</i> 
 	{% for category in post.categories %}
-		 <a rel="tag" href="{{ root_url }}{{ site.category_dir }}/{{ category | downcase }}"> {{ category }} </a>
+		 <a rel="tag" href="{{ site.url }}{{ site.category_dir }}/{{ category | downcase }}"> {{ category }} </a>
 	{% endfor %}
 	
 	{% for category in page.categories %}
-		 <a rel="tag" href="{{ root_url }}{{ site.category_dir }}/{{ category | downcase }}"> {{ category }} </a>
+		 <a rel="tag" href="{{ site.url }}{{ site.category_dir }}/{{ category | downcase }}"> {{ category }} </a>
 	{% endfor %}
 </div>

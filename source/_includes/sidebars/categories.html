@@ -3,7 +3,7 @@
     <h3>CATEGORIES</h3>
 	<ul class="list dots categories">
 	{% for category in site.categories %}
-		<li> <a rel="tag" href="{{ root_url }}{{ site.category_dir }}/{{ category[0] | downcase }}"> {{ category[0] }} </a></li>
+		<li> <a rel="tag" href="{{ site.url }}{{ site.category_dir }}/{{ category[0] | downcase }}"> {{ category[0] }} </a></li>
 	{% endfor %}
 	</ul>                
 </div>

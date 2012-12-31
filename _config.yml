@@ -17,7 +17,7 @@ keywords: 西藏, 拉薩, 成都, 騎行, 單車, 自行車, 川藏, 318, 攻略
 date_format: "ordinal"
 
 # RSS / Email (optional) subscription links (change if using something like Feedburner)
-subscribe_rss: /atom.xml
+subscribe_rss: "http://onsaddles.com/atom.xml"
 subscribe_email: "http://eepurl.com/tuYhj"
 category_feeds: false
 # RSS feeds can list your email address if you like
