@@ -8,3 +8,13 @@
 <updated>{{ post.date | date_to_xmlschema }}</updated>
 <id>{{ site.url }}{{ post.id }}</id>
 {% for category in post.categories %}<category term="{{ category }}" />{% endfor %}
+{% if post.author %}
+  {% assign author = post.author %}
+{% elsif page.author %}
+  {% assign author = page.author %}
+{% else %}
+  {% assign author = site.author %}
+{% endif %}
+<author>
+  <name>{{ author }}</name>
+</author>
