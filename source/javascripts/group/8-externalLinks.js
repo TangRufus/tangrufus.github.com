@@ -1,12 +1,9 @@
-function externalLinks()
-{
-if (!document.getElementsByTagName) return;
-var anchors = document.getElementsByTagName("a");
-for (var i=0; i<anchors.length; i++)
-{
-var anchor = anchors[i];
-if(anchor.getAttribute("href"))
-anchor.target = "_blank";
-}
-}
-window.onload = externalLinks;
+$(document).ready(function() {
+   $("a").each(function(){
+      if(this.href.indexOf(location.hostname) == -1) {
+         $(this).attr({
+            target: "_blank",
+         });
+      }
+   })
+});
