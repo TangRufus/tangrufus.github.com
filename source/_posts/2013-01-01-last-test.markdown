@@ -1,0 +1,14 @@
+---
+layout: post
+date: 2013-01-01 01:45
+comments: true
+title: "last test"
+cover: 
+categories: [test, over]
+keywords: [hihih, gogogog]
+description: diu diu diu
+featured: true
+---
+##last
+asmdn amsnd 
+asdkjbamsnd asd
