@@ -1,0 +1,27 @@
+---
+layout: nil
+---
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <id>{{ site.url }}/</id>
+  <title><![CDATA[{{ site.title }}]]></title>
+  <link href="{{ site.url }}/atom.xml" rel="self"/>
+  <link href="{{ site.url }}/"/>
+  <updated>{{ site.time | date_to_xmlschema }}</updated>
+  <author>
+    <name><![CDATA[{{ site.author | strip_html }}]]></name>
+    {% if site.email %}<email><![CDATA[{{ site.email }}]]></email>{% endif %}
+	{% if site.sina_eribo_profile_url %}<uri><![CDATA[{{ site.sina_eribo_profile_url }}]]></uri>{% endif %}
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+  <icon>{{ site.url }}/favicon.ico</icon>
+  <subtitle><![CDATA[{{ site.description | strip_html }}]]></subtitle>
+  
+  
+  {% for post in site.posts limit: 20 %}
+    <entry>
+      {% include feed_entry.xml %}
+      <content type="html"><![CDATA[{{ content | cdata_escape }}]]></content>
+    </entry>
+  {% endfor %}
+</feed>
