@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <id>http://onsaddles.com/</id>
+  <title><![CDATA[onSaddles]]></title>
+  <link href="http://onsaddles.com/atom.xml" rel="self"/>
+  <link href="http://onsaddles.com/"/>
+  <updated>2013-07-31T02:42:07+08:00</updated>
+  <author>
+    <name><![CDATA[港仔 Rufus]]></name>
+    <email><![CDATA[tangrufus@onsaddles.com]]></email>
+	<uri><![CDATA[http://weibo.com/tangrufus]]></uri>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+  <icon>http://onsaddles.com/favicon.ico</icon>
+  <subtitle><![CDATA[踩單車去西藏，二千四百公里，冇爆胎，冇搭車]]></subtitle>
+  
+  
+  
+    <entry>
+      
+
+
+
+
+<title type="html"><![CDATA[still fucking mailchimp]]></title>
+<link href="http://onsaddles.com/still-fucking-mailchimp/"/>
+<updated>2013-01-06T05:12:00+08:00</updated>
+<id>http://onsaddles.com/still-fucking-mailchimp</id>
+<category term="test" /><category term="hihi" />
+
+  
+
+<author>
+  <name>港仔 Rufus</name>
+</author>
+      <content type="html"><![CDATA[<h2>testing mailchimp</h2>
+
+<h3>testing</h3>
+
+<p>hello</p>
+
+<p>bye</p>
+]]></content>
+    </entry>
+  
+    <entry>
+      
+
+
+
+
+<title type="html"><![CDATA[fuck mailchimp]]></title>
+<link href="http://onsaddles.com/fuck-mailchimp/"/>
+<updated>2013-01-01T01:47:00+08:00</updated>
+<id>http://onsaddles.com/fuck-mailchimp</id>
+<category term="test" /><category term="over" />
+
+  
+
+<author>
+  <name>港仔 Rufus</name>
+</author>
+      <content type="html"><![CDATA[<h2>diu diu diu</h2>
+
+<p>FUCK FUCK</p>
+]]></content>
+    </entry>
+  
+    <entry>
+      
+
+
+
+
+<title type="html"><![CDATA[last test]]></title>
+<link href="http://onsaddles.com/last-test/"/>
+<updated>2013-01-01T01:45:00+08:00</updated>
+<id>http://onsaddles.com/last-test</id>
+<category term="test" /><category term="over" />
+
+  
+
+<author>
+  <name>港仔 Rufus</name>
+</author>
+      <content type="html"><![CDATA[<h2>last</h2>
+
+<p>asmdn amsnd
+asdkjbamsnd asd</p>
+]]></content>
+    </entry>
+  
+    <entry>
+      
+
+
+
+
+<title type="html"><![CDATA[coming soon]]></title>
+<link href="http://onsaddles.com/coming-soon/"/>
+<updated>2013-01-01T01:28:00+08:00</updated>
+<id>http://onsaddles.com/coming-soon</id>
+<category term="testing" /><category term="soon" /><category term="over" /><category term="out" />
+
+  
+
+<author>
+  <name>港仔 Rufus</name>
+</author>
+      <content type="html"><![CDATA[<h2>Final testing</h2>
+
+<p>Coming soon.</p>
+]]></content>
+    </entry>
+  
+</feed>
